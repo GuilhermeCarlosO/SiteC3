@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Eventos</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #663399;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+        }
+
+        input, textarea, button {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #663399;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Eventos</h1>
+    </header>
+
+    <div class="container">
+        <form>
+            <label for="nome_evento">Nome do Evento:</label>
+            <input type="text" id="nome_evento" name="nome_evento" required>
+
+            <label for="data_evento">Data do Evento:</label>
+            <input type="date" id="data_evento" name="data_evento" required>
+
+            <label for="descricao_evento">Descrição do Evento:</label>
+            <textarea id="descricao_evento" name="descricao_evento" rows="4" required></textarea>
+
+            <label for="custo_evento">Custo do Evento:</label>
+            <input type="text" id="custo_evento" name="custo_evento">
+
+            <label for="local_evento">Local do Evento:</label>
+            <input type="text" id="local_evento" name="local_evento" required>
+
+            <button type="submit">Agendar Evento</button>
+        </form>
+    </div>
+</body>
+</html>
